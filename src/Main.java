@@ -15,9 +15,19 @@ public class Main {
         curso2.setDescricao("Descrição curso js");
         curso2.setCargaHoraria(4);
 
+        Curso cursoCpp = new Curso();
+        curso2.setTitulo("curso c++");
+        curso2.setDescricao("Descrição curso c++");
+        curso2.setCargaHoraria(4);
+
         Mentoria mentoria = new Mentoria();
         mentoria.setTitulo("mentoria de java");
         mentoria.setDescricao("descricao mentoria java");
+        mentoria.setData(LocalDate.now());
+
+        Mentoria mentoriaCpp = new Mentoria();
+        mentoria.setTitulo("mentoria de C++");
+        mentoria.setDescricao("descricao mentoria C++");
         mentoria.setData(LocalDate.now());
 
 
@@ -27,6 +37,8 @@ public class Main {
         bootcamp.getCondeudos().add(curso1);
         bootcamp.getCondeudos().add(curso2);
         bootcamp.getCondeudos().add(mentoria);
+        bootcamp.getCondeudos().add(cursoCpp);
+        bootcamp.getCondeudos().add(mentoriaCpp);
 
         Dev devLuiz = new Dev();
         devLuiz.setNome("Luiz");
